@@ -55,17 +55,25 @@ El sistema está **contenedorizado completamente con Docker**, lo cual asegura p
 
 ---
 
-## 🧱 Arquitectura del Sistema (Diagrama)
+## 🧱 Arquitectura del Sistema
+
+<div align="center">
 
 ```mermaid
 flowchart TD
-    A[Usuario 💻] --> B[Interfaz Gradio 🌐]
-    B --> C[Modelo Gen-AI 🤖]
-    C --> D[(MLflow Tracking 📊)]
-    D --> E[Parámetros]
-    D --> F[Métricas]
-    D --> G[Artefactos]
+    classDef user fill:#4CAF50,color:white,stroke:#2E7D32,stroke-width:2
+    classDef ui fill:#42A5F5,color:white,stroke:#1E88E5,stroke-width:2
+    classDef model fill:#7E57C2,color:white,stroke:#5E35B1,stroke-width:2
+    classDef tracking fill:#FFA726,color:white,stroke:#FB8C00,stroke-width:2
+    classDef store fill:#EF5350,color:white,stroke:#C62828,stroke-width:2
 
+    A[👤 Usuario]:::user --> B[🎛️ Interfaz Gradio]:::ui
+    B --> C[🤖 Modelo Gen-AI]:::model
+    C --> D[(📊 MLflow Tracking)]:::tracking
+
+    D --> E[⚙️ Parámetros]:::store
+    D --> F[📈 Métricas]:::store
+    D --> G[🗂️ Artefactos]:::store
 ---
 
 ## 🐳 Ejecución con Docker
