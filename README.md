@@ -36,7 +36,7 @@ Todo el sistema está **contenedorizado con Docker**, asegurando portabilidad y 
 ---
 
 ## 🧱 Arquitectura del Sistema
-
+```bash
 ┌──────────────┐
 │ Usuario │
 └──────┬───────┘
@@ -51,7 +51,7 @@ Todo el sistema está **contenedorizado con Docker**, asegurando portabilidad y 
 │ MLflow │
 │ (Tracking) │
 └───────────────┘
-
+```
 ---
 
 ## 🐳 Ejecución con Docker
