@@ -59,13 +59,7 @@ El sistema está **contenedorizado completamente con Docker**, lo cual asegura p
 
 <div align="center">
 
-```mermaid
-flowchart TD
-    classDef user fill:#4CAF50,color:white,stroke:#2E7D32,stroke-width:2
-    classDef ui fill:#42A5F5,color:white,stroke:#1E88E5,stroke-width:2
-    classDef model fill:#7E57C2,color:white,stroke:#5E35B1,stroke-width:2
-    classDef tracking fill:#FFA726,color:white,stroke:#FB8C00,stroke-width:2
-    classDef store fill:#EF5350,color:white,stroke:#C62828,stroke-width:2
+```bash
 
     A[👤 Usuario]:::user --> B[🎛️ Interfaz Gradio]:::ui
     B --> C[🤖 Modelo Gen-AI]:::model
@@ -74,6 +68,7 @@ flowchart TD
     D --> E[⚙️ Parámetros]:::store
     D --> F[📈 Métricas]:::store
     D --> G[🗂️ Artefactos]:::store
+```
 ---
 
 ## 🐳 Ejecución con Docker
