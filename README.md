@@ -1,3 +1,15 @@
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Gradio](https://img.shields.io/badge/Gradio-FF6F00?style=for-the-badge&logo=gradio&logoColor=white)
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Google GenAI](https://img.shields.io/badge/GenAI-Google-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+</div>
+
+
 # 🌐 Traductor Inteligente con Tracking en MLflow y Despliegue Dockerizado
 
 Este proyecto implementa un traductor basado en **Gen-AI** con interfaz en **Gradio**, y registra automáticamente los detalles de cada traducción en **MLflow** (parámetros, métricas y artefactos).  
