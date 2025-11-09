@@ -44,6 +44,9 @@ docker volume create mlflow_artifacts
 ```
 
 ### 2. Ejecutar el Traductor (desde Docker Hub)
+Traemos la imagen del DockerHub:
+#### camiloramos2000/traductor-genai:1.0.0 en DockerHub
+<img src="img/traductor-dockerhub.png" width="600">
 ```bash
 docker pull camiloramos2000/traductor-genai:1.0.0
 ```
@@ -55,6 +58,7 @@ Acceso interfaz Gradio:
 👉 http://localhost:7860
 
 ### 3. Ejecutar el servidor MLflow
+traemos la imagen de DockerHub:
 ```bash
 docker pull ghcr.io/mlflow/mlflow
 ```
