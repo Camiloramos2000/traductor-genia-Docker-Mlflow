@@ -9,40 +9,63 @@
 
 </div>
 
+<br/>
 
-# 🌐 Traductor Inteligente con Tracking en MLflow y Despliegue Dockerizado
+<div align="center">
+  
+# 🌐 Traductor Inteligente con Seguimiento en MLflow + Despliegue en Docker  
+✨ *Interfaz Gradio + Registro Automático de Métricas y Artefactos*
 
-Este proyecto implementa un traductor basado en **Gen-AI** con interfaz en **Gradio**, y registra automáticamente los detalles de cada traducción en **MLflow** (parámetros, métricas y artefactos).  
-Todo el sistema está **contenedorizado con Docker**, asegurando portabilidad y fácil despliegue en cualquier entorno.
+</div>
+
+---
+
+### 🚀 Descripción General
+
+Este proyecto implementa un **traductor con inteligencia generativa (Gen-AI)**, accesible desde una interfaz web construida con **Gradio**.  
+Cada traducción realizada queda registrada automáticamente en **MLflow** (parámetros, métricas y artefactos), lo que permite monitorear el comportamiento del modelo y comparar ejecuciones.
+
+El sistema está **contenedorizado completamente con Docker**, lo cual asegura portabilidad y despliegue reproducible en cualquier equipo.
+
+---
+
+## 🎨 Vista General del Proyecto
+
+| Componente | Tecnología | Rol |
+|----------|------------|-----|
+| Interfaz Web | Gradio | Entrada y visualización de traducción |
+| Modelo de Traducción | Gen-AI (Google) | Procesamiento y generación |
+| Tracking Experimentos | MLflow | Registro de params, métricas y artefactos |
+| Despliegue | Docker | Portabilidad y ejecución estándar |
 
 ---
 
 ## 🖼️ Evidencias Visuales
 
-### 1. Interfaz Gradio funcionando
+### 🌍 Interfaz del Traductor
 <img src="img/interface_traductor.png" width="600">
 
-### 2. Seguimiento en MLflow
+### 📊 Panel de Métricas en MLflow
 
-#### Parámetros (Params)
-<img src="img/mlflow_parameter.png" width="600">
-
-#### Métricas (Metrics)
-<img src="img/mlflow_metrics.png" width="600">
-
-#### Artefactos (Artifacts)
-<img src="img/mlflow_artifacts.png" width="600">
+| Tipo | Vista |
+|------|------|
+| **Parámetros (Params)** | <img src="img/mlflow_parameter.png" width="600"> |
+| **Métricas (Metrics)** | <img src="img/mlflow_metrics.png" width="600"> |
+| **Artefactos (Artifacts)** | <img src="img/mlflow_artifacts.png" width="600"> |
 
 ---
 
-## 🧱 Arquitectura del Sistema
+## 🧱 Arquitectura del Sistema (Diagrama)
 
-```bash
-Usuario → Gradio UI → Traductor Gen-AI
-                               ↓
-                          MLflow Tracking
-                    (Params, Metrics, Artifacts)
-```
+```mermaid
+flowchart TD
+    A[Usuario 💻] --> B[Interfaz Gradio 🌐]
+    B --> C[Modelo Gen-AI 🤖]
+    C --> D[(MLflow Tracking 📊)]
+    D --> E[Parámetros]
+    D --> F[Métricas]
+    D --> G[Artefactos]
+
 ---
 
 ## 🐳 Ejecución con Docker
