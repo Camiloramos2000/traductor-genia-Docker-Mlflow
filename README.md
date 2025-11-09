@@ -8,12 +8,12 @@ Todo el sistema está **contenedorizado con Docker**, asegurando portabilidad y 
 ## 🖼️ Evidencias Visuales
 
 ### 1. Interfaz Gradio funcionando
-<img src="img/gradio_interface.png" width="600">
+<img src="img/interface_traductor.png" width="600">
 
 ### 2. Seguimiento en MLflow
 
 #### Parámetros (Params)
-<img src="img/mlflow_params.png" width="600">
+<img src="img/mlflow_parameter.png" width="600">
 
 #### Métricas (Metrics)
 <img src="img/mlflow_metrics.png" width="600">
@@ -46,7 +46,7 @@ docker volume create mlflow_artifacts
 ### 2. Ejecutar el Traductor (desde Docker Hub)
 Traemos la imagen del DockerHub:
 #### camiloramos2000/traductor-genai:1.0.0 en DockerHub
-<img src="img/traductor-dockerhub.png" width="600">
+<img src="img/imagen_app_dockerHub.png" width="600">
 ```bash
 docker pull camiloramos2000/traductor-genai:1.0.0
 ```
