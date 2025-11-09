@@ -44,9 +44,9 @@ docker volume create mlflow_artifacts
 ```
 
 ### 2. Ejecutar el Traductor (desde Docker Hub)
-
+```bash
 docker pull camiloramos2000/traductor-genai:1.0.0
-
+```
 > Reemplazar `TU_API_KEY` con tu API real.
 ```bash
 docker run -it -d   --name traductor-genai   -p 7860:7860   --network translation-net   -e MLFLOW_URI="http://mlflow:5000"   -e GENAI_API_KEY="TU_API_KEY"   camiloramos2000/traductor-genai:1.0.0
@@ -55,9 +55,9 @@ Acceso interfaz Gradio:
 👉 http://localhost:7860
 
 ### 3. Ejecutar el servidor MLflow
-
+```bash
 docker pull ghcr.io/mlflow/mlflow
-
+```
 ```bash
 docker run -d -it --rm   --name mlflow   --network translation-net   -p 5000:5000   -v mlflow_data:/mlflow   -v mlflow_artifacts:/mlflow/artifacts   mlflow   mlflow server     --backend-store-uri sqlite:////mlflow/mlflow.db     --default-artifact-root /mlflow/artifacts     --host 0.0.0.0     --port 5000
 ```
